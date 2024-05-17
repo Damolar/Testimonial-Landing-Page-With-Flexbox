@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.bio{
+    display: flex;
+}
+
+.bio img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.bio h3, .bio p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.graduate{
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.top-Left,
+.top-Right,
+.bottom-Left,
+.bottom-Right,
+.two{
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 1px -1px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px -1px 9px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+.top-Left h2,
+.top-Right h2,
+.bottom-Left h2,
+.bottom-Right h2,
+.two h2{
+ font-size: 1.2rem;
+}
+
+.top-Left p,
+.top-Right p,
+.bottom-Left p,
+.bottom-Right p,
+.two p{
+    font-size: 0.8rem;
+}
+
+.container{
+    background-color: #E2E9F0;
+}
+
+.top-Left{
+    background-color: #7d4ec9;
+    color: #fff;
+}
+.top-Right{
+    background-color: #545F76;
+    color: #fff;
+}
+.bottom-Left{
+    background-color: #fff;
+}
+.bottom-Right{
+    background-color: #091122;
+    color: #fff;
+}
+.two{
+    background-color: #fff;
+}
+
+@media screen and (min-width: 750px){
+    .container{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .subContainer{
+        width: 80%;
+        display: flex;
+        margin: 4rem 0;
+    }
+    
+    .sectionOne, .top-Left, .bottom-Right{
+        width: 75%;
+    }
+    .sectionTwo, .top-Right, .bottom-Left{
+        width: 25%;
+    }
+    .top{
+        display: flex;
+    }
+    .bottom{
+        display: flex;
+    }
+    .top-Left{
+        margin-right: 2rem;
+    }
+    .bottom-Right, .sectionTwo{
+        margin-left: 2rem;
+    }
+    
+}
